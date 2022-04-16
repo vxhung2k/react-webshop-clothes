@@ -1,0 +1,15 @@
+.about__img img {
+    width: 30rem;
+}
+
+.about {
+    display: grid;
+    justify-items: center;
+    gap: 2rem;
+}
+
+.aboutus {
+    display: grid;
+    gap: 1rem;
+    text-align: center;
+}

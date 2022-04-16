@@ -1,38 +1,131 @@
-.App {
-  text-align: center;
+.text-light {
+    text-decoration: none;
+    font-size: 40px;
+    color: var(--color-black);
+    font-weight: 500;
+    font-family: var(--font-base);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+    font-size: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+    overflow-x: hidden;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.icons {
+    font-size: 30px;
+    color: orange;
 }
 
-.App-link {
-  color: #61dafb;
+.icons1 {
+    font-size: 40px;
+    color: orange;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.icons1:hover {
+    color: aquamarine;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 3rem;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.danger {
+    font-size: 30px;
+    color: red;
+}
+
+
+/************************************/
+
+
+/*******************************/
+
+.rotate {
+    animation: rotation 5s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(7deg);
+    }
+}
+
+
+/****************************************/
+
+.button {
+    padding: 0.5rem 1rem;
+    background: var(--color-golden);
+    cursor: pointer;
+    width: fit-content;
+}
+
+.button:hover {
+    background: aquamarine;
+}
+
+
+/*********************************/
+
+.element {
+    height: 250px;
+    width: 250px;
+    margin: 0 auto;
+    background-color: rgb(92, 85, 85);
+    animation-name: stretch;
+    animation-duration: 10s;
+    animation-timing-function: ease-out;
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+    animation-play-state: running;
+}
+
+@keyframes stretch {
+    0% {
+        transform: scale(.3);
+        background-color: rgb(201, 172, 172);
+        border-radius: 100%;
+    }
+    50% {
+        background-color: orange;
+    }
+    100% {
+        transform: scale(1.5);
+        background-color: yellow;
+    }
+}
+
+
+/****************************/
+
+@media screen and (max-width:1200px) {
+    .text-light {
+        font-size: 22px;
+    }
+    .container {
+        width: 90%;
+    }
+    .icons {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .container {
+        width: 94%;
+    }
 }

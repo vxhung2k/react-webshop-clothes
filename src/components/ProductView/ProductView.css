@@ -1,0 +1,144 @@
+.productview {
+    display: grid;
+    gap: 3rem;
+}
+
+.product__more {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    text-align: center;
+    margin-bottom: 10rem;
+}
+
+.product__more__item {
+    display: grid;
+    gap: 2rem;
+    justify-items: center;
+}
+
+.product__more__img {
+    display: flex;
+}
+
+.product__more__img img {
+    max-width: 80%;
+    width: auto;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    aspect-ratio: 2/3;
+}
+
+.product__more__img img:nth-child(1) {
+    position: relative;
+    left: 10%;
+}
+
+.product__more__img img:nth-child(2) {
+    position: relative;
+    left: -70%;
+    transition: all 0.6s ease;
+    box-shadow: 5px 5px 2px 1px rgba(0, 0, 255, .2);
+}
+
+.product__more__img:hover img:nth-child(2) {
+    opacity: 0;
+    transform: scale(1.05);
+}
+
+.product__more__price {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.product__more__price span {
+    text-decoration: line-through;
+}
+
+img {
+    border-radius: 0.5rem;
+}
+
+img:hover {
+    transform: scale(1.02);
+    box-shadow: 5px 5px 2px 1px rgb(170, 206, 229, 0.7);
+}
+
+
+/***********************body-left images************************/
+
+.productdisplay__left__img_left {
+    display: grid;
+    height: fit-content;
+}
+
+.productdisplay__left__img_right img {
+    max-width: 60%;
+    width: auto;
+    aspect-ratio: 3/4.3;
+}
+
+.productdisplay__left__img {
+    display: flex;
+    gap: 2rem;
+}
+
+.product__detail {
+    display: grid;
+    gap: 2rem;
+}
+
+.productdisplay {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 2rem
+}
+
+.productdisplay__left {
+    display: grid;
+    gap: 3rem;
+}
+
+
+/**************color*******************/
+
+.button__circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1.5px solid rgb(17, 15, 15, 0.6);
+    cursor: pointer;
+    transition: all 400ms ease;
+}
+
+.button__circle:hover {
+    background: aliceblue;
+    transform: scale(1.02);
+}
+
+.a {
+    display: flex;
+    gap: 1rem;
+}
+
+.product__color {
+    display: grid;
+    gap: 1rem;
+}
+
+.product__size {
+    display: grid;
+    gap: 1rem;
+}
+
+.productdisplay__right {
+    display: grid;
+    gap: 1rem;
+    height: fit-content;
+}
+
+.product__right__buy {
+    display: flex;
+    gap: 2rem;
+}

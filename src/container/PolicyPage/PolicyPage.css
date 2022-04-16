@@ -1,0 +1,10 @@
+.policypage__container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.policypage__container img {
+    max-width: 35rem;
+}

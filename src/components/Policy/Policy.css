@@ -1,0 +1,22 @@
+.policy {
+    margin-top: 3rem;
+}
+
+.policy__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.policy__item {
+    display: flex;
+    gap: 2rem;
+    padding: 1rem 1rem;
+    background: rgb(187, 179, 179);
+    border: 1.5px solid black;
+}
+
+.policy__item:hover {
+    background: rgb(78, 226, 226);
+    transform: scale(1.09);
+}

@@ -1,24 +1,38 @@
-import logo from './logo.svg';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import React from 'react'
 import './App.css';
+import { HomePage, Login, Register, Product, Cart, PolicyPage, Contact, Accessory, About } from './container'
+import { NotFound, ProductView, AccessoryView } from './components'
+import { CartProvider } from "react-use-cart"
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <CartProvider>
+      <BrowserRouter>
+        <Routes >
+
+          <Route path='/' element={<HomePage />} />
+          <Route path='/login' element={<Login />} />
+          <Route path='/register' element={<Register />} />
+          <Route path='/cart' element={<Cart />} />
+          <Route path='/catalog' element={<Product />} />
+          <Route path='/catalog/:slug' element={<ProductView />} />
+          <Route path='/accessories' element={<Accessory />} />
+          <Route path='/accessories/:slug' element={<AccessoryView />} />
+          <Route path='/policy' element={<PolicyPage />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path='/about' element={<About />} />
+          <Route path='*' element={<NotFound />} />
+
+        </Routes>
+
+
+
+
+
+      </BrowserRouter>
+    </CartProvider>
+
   );
 }
 

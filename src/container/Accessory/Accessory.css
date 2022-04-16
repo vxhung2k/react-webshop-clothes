@@ -1,0 +1,29 @@
+.accessories__body {
+    display: grid;
+    grid-template-columns: 15% 85%;
+    gap: 2rem;
+}
+
+.display__accessories {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.accessoris__list {
+    display: grid;
+    text-align: center;
+}
+
+.accessories__list__price {
+    display: flex;
+    margin-left: 5rem;
+    gap: 1rem;
+}
+
+.accessories__list__img img {
+    max-width: 80%;
+    width: auto;
+    aspect-ratio: 3/4;
+    border: 1.5px solid black;
+}

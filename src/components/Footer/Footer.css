@@ -1,0 +1,40 @@
+.footer__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+}
+
+h3 {
+    padding: 0.5rem 0;
+}
+
+.content {
+    max-width: 80%;
+    gap: 2rem;
+    display: grid;
+    height: fit-content;
+    justify-items: center;
+}
+
+.content img {
+    max-width: 5rem;
+}
+
+@media screen and (max-width:1200px) {
+    h3 {
+        padding: 0.25rem 0;
+    }
+    .content {
+        max-width: 100%;
+        gap: 1rem;
+        max-width: 98%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .footer__container {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 1rem;
+    }
+}
